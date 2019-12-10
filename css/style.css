@@ -1,0 +1,380 @@
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.up {
+  display: inline;
+  /* background-color: rgba(241, 174, 79, 0.465); */
+  background-color: #343a40;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.row {
+  margin: 0;
+}
+div.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 20px;
+}
+.column {
+  width: 25vw;
+}
+a {
+  color: rgb(241, 187, 88);
+  text-decoration: none;
+}
+.up ol {
+  margin: 0px;
+  /* margin-left: 320px; */
+  padding-top: 0px;
+  position: relative;
+  display: initial;
+}
+
+.up img {
+  /* opacity: 1; */
+  height: 70px;
+  /* position: absolute; */
+}
+.up h2 {
+  /* background-color: white; */
+  border: white;
+  display: inline;
+  font-size: 64px;
+  padding-top: 0px;
+  padding: 0px;
+  /* margin-left: 50px; */
+  color: rgb(241, 187, 88);
+  text-shadow: black;
+  margin: 0px;
+}
+.up li {
+  /* align: 0px; */
+  display: inline;
+  padding: 8px;
+  /* padding-right: 39px;
+  padding-left: 30px; */
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+.up a:hover {
+  /* background-color: rgba(255, 255, 255, 0.513); */
+  color: rgb(119, 89, 38) !important;
+  cursor: pointer;
+}
+.up ol li {
+  display: inline;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: right;
+  text-shadow: black;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+The dots/bullets/indicators .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body,
+html {
+  height: 70%;
+}
+
+.bg {
+  right: 20px;
+  /* padding-top: 100px; */
+  background-image: url(../img/f6.jpg);
+  height: 630px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+}
+
+#myVideo {
+  /* top: -2px; */
+  overflow: hidden;
+  padding-top: 60px;
+  position: relative;
+  padding-right: 20px;
+
+  width: 100%;
+
+  padding: 0px;
+  margin: 0px;
+  background-color: white;
+  /* margin-top: -3.06%; */
+  overflow: hidden;
+  z-index: -1;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  background-color: rgba(209, 156, 11, 0.5);
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0px 2px;
+  background-color: #ca8f38bf;
+}
+
+.column img {
+  margin-top: 3px;
+  vertical-align: middle;
+  width: 100%;
+  background-color: #ca8f38bf;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+    background-color: #ca8f38bf;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+main {
+  background-color: rgba(209, 156, 11, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  z-index: 1;
+}
+
+/* Make the image to responsive */
+/* .image {
+  display: block;
+  width: 100%;
+  height: auto;
+} */
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0px;
+  background: rgba(0, 0, 0, 0.8);
+  /* background: rgba(209, 156, 11, 0.5); */
+
+  width: 100%;
+  height: 100%;
+  /* transition: .5s ease; */
+  opacity: 0;
+  color: #ca8f38bf;
+  font-size: 22px;
+  padding: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 25%;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.carousel {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.carousel img {
+  width: 100%;
+}
+.container {
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+.container-img {
+  position: relative;
+  text-align: left;
+  color: white;
+}
+.gal {
+  background-color: rgba(209, 156, 11, 0.5);
+}
+
+.bottom-right1 {
+  position: absolute;
+  top: 30px;
+
+  text-align: left;
+
+  color: white;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.452);
+  /* height: 270px; */
+  padding: 30px;
+}
+.bottom-right {
+  position: absolute;
+  bottom: 100px;
+  /* right: -233px; */
+  text-align: left;
+  /* left: -251px; */
+  color: white;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.452);
+  /* height: 270px; */
+  padding: 30px;
+}
+.carousel-inner > .item > a > img,
+.carousel-inner > .item > img,
+.img-responsive,
+.thumbnail a > img,
+.thumbnail > img {
+  height: 700px !important;
+  width: 100vw !important;
+}
+#f20 {
+  color: orange;
+  font-size: 25px;
+  font-display: bold;
+}
+.container-2 {
+  margin-left: 200px;
+  margin: 20px;
+  margin-right: 250px;
+  margin-left: 250px;
+  background-color: rgba(209, 156, 11, 0.5);
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+}
+body {
+  background-color: rgba(209, 156, 11, 0.5);
+}
